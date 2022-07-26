@@ -58,6 +58,7 @@
 }
 
 
+
 .contenedor-g div a {
     font-size: 20px;
     text-decoration: none;
@@ -71,13 +72,22 @@
     height: 250px;
 }
 
+.encuadre-1:hover {
+    background-color: black;
+}
+
 .encuadre-2 {
     grid-area: elytra;
 
 }
 
+
 .encuadre-2 img {
     height: 250px;
+}
+
+.encuadre-2:hover {
+    background-color: black;
 }
 
 .encuadre-3 {
@@ -86,6 +96,10 @@
 
 .encuadre-3 img {
     height: 250px;
+}
+
+.encuadre-3:hover {
+    background-color: black;
 }
 
 .encuadre-4 {
@@ -97,12 +111,20 @@
     width: 500px;
 }
 
+.encuadre-4:hover {
+    background-color: black;
+}
+
 .encuadre-5 {
     grid-area: backpacked;
 }
 
 .encuadre-5 img {
     height: 250px;
+}
+
+.encuadre-5:hover {
+    background-color: black;
 }
 
 .encuadre-6 {
@@ -112,6 +134,10 @@
 .encuadre-6 img {
     height: 500px;
     width: 500px;
+}
+
+.encuadre-6:hover {
+    background-color: black;
 }
 
 .encabezado {
@@ -160,6 +186,8 @@ span {
 }
 
 .button:hover {
+    background-color: rgba(122, 190, 12, 0.548);
+    text-decoration: underline;
     font-size: 30px;
     transition: 1s;
     text-shadow: black 10px 2px 5px;
