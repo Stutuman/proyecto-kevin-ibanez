@@ -17,27 +17,6 @@
     background-size: cover;
 }
 
-/* SECCION NAV */
-
-
-
-
-/* SECCION HOME */
-
-
-
-
-/* SECCION MODS */
-
-
-
-/* SECCION SERVIDORES  */
-
-
-/* SECCION CREAR CUENTA */
-
-
-
 #relleno {
     border: groove 20px rgba(26, 85, 26, 0.801);
     background-image: url(../mods-image/fondo-cubos-verdes-3d_237404-207.jpg);
@@ -397,6 +376,10 @@ form div {
 .wrapper img {
     max-width: 200px;
     max-height: 300px;
+}
+
+.registro {
+    color: rgb(48, 30, 3);
 }
 
 
