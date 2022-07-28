@@ -7,6 +7,7 @@
     font-family: 'Bebas Neue', cursive;
 }
 
+
 .relleno {
     border: groove 20px rgba(26, 85, 26, 0.801);
     background-image: url(../mods-image/fondo-cubos-verdes-3d_237404-207.jpg);
@@ -292,12 +293,51 @@ td a {
     text-decoration: none;
 }
 
+/* footer */
+footer {
+    background-color: rgb(31, 40, 41);
+    border: black;
+    color: rgb(164, 164, 165);
+    /* height: 150px; */
+    /* padding: 0%; */
+    text-align: center;
+}
+
+/* 
+footer .footer-kid {
+    bottom: 0%;
+    width: 00%;
+} */
+
 .pie {
-    text-align: start;
-    background-color: rgba(56, 180, 39, 0.829);
+    display: inline-flex;
+    color: blue;
+    text-align: center;
+    padding: 10px;
+}
+
+.pie a {
+    text-decoration: none;
+}
+
+.pie i {
+    color: rgb(173, 160, 160);
+    font-size: 25px;
+    text-decoration: none;
 
 }
 
+.derechos {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.derechos p {
+    font-family: cursive;
+}
+
+/* FIN FOOTEER */
 .registro {
     background-color: none;
     text-align: center;
@@ -370,7 +410,8 @@ form div {
 /*Servidor famoso*/
 .wrapper {
     display: grid;
-    grid-gap: 15px;
+    justify-content: center;
+    grid-gap: 50px;
     grid-template-columns: 500px 700px;
     grid-template-rows: 150px 150px;
     background-color: rgba(32, 136, 0, 0.822);
