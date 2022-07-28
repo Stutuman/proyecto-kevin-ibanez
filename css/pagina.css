@@ -424,7 +424,7 @@ form div {
     background-color: #444;
     color: rgb(255, 71, 71);
     border-radius: 5px;
-    padding: 20px;
+    padding: 10px;
     font-size: 150%;
 }
 
@@ -459,6 +459,13 @@ form div {
     color: rgb(48, 30, 3);
 }
 
+.progreso {
+    padding: 20px;
+}
+
+.progress {
+    height: 30px;
+}
 
 @media screen and (min-width:320px) {
 

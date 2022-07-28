@@ -64,20 +64,29 @@
                             <li>
                                 <p>Pico</p>
                                 <img src="imagenes/pico.jpg" style="max-height: 100px;" alt="Crafteo de pico">
+                                <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample1"
+                                    role="button" aria-expanded="false"
+                                    aria-controls="multiCollapseExample1">Crafteo</a>
                             </li>
                             <li>
                                 <p>Hacha</p>
                                 <img src="imagenes/Gvf0iBz.png" style="max-height: 100px;" alt="crafteo de hacha">
+                                <button class="btn btn-danger" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#multiCollapseExample2" aria-expanded="false"
+                                    aria-controls="multiCollapseExample2">Crafteo</button>
                             </li>
                             <li>
                                 <p>Espada</p>
                                 <img src="imagenes/Espada_de_madera,crafteo.png" style="max-height: 100px;"
                                     alt="crafteo de espada">
+                                <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#multiCollapseExample3" aria-expanded="false"
+                                    aria-controls="multiCollapseExample3 ">Crafteo</button>
                             </li>
                         </ul>
                     </li>
                 </ul>
-                <ul class="tituloListado">
+                <!-- <ul class="tituloListado">
                     <li>listado de objetos necesarios
                         <ul>
                             <li>madera</li>
@@ -92,7 +101,55 @@
                             <li>netherita</li>
                         </ul>
                     </li>
-                </ul>
+                </ul> -->
+            </div>
+            <!-- <p>
+                <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button"
+                    aria-expanded="false" aria-controls="multiCollapseExample1">Toggle first element</a>
+                <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#multiCollapseExample2" aria-expanded="false"
+                    aria-controls="multiCollapseExample2">Toggle second element</button>
+                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse"
+                    aria-expanded="false" aria-controls="multiCollapseExample3">Toggle both
+                    elements</button>
+            </p> -->
+            <div class="row">
+                <div class="col">
+                    <div class="collapse multi-collapse" id="multiCollapseExample1">
+                        <div class="card card-body">
+                            <ul class="tituloListado">
+                                <li>listado de objetos necesarios
+                                    <ul>
+                                        <li>madera</li>
+                                        <li>palos</li>
+                                    </ul>
+                                </li>
+                                <li>minerales utilizables a la hora de craftear
+                                    <ul>
+                                        <li>hierro</li>
+                                        <li>oro</li>
+                                        <li>diamante</li>
+                                        <li>netherita</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="collapse multi-collapse" id="multiCollapseExample2">
+                        <div class="card card-body">
+                            <p>Se necesita dos palos y 3 de madera o algun mineral</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="collapse multi-collapse" id="multiCollapseExample3">
+                        <div class="card card-body">
+                            <p>se necesita un palo y 2 de madera o algun mineral</p>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="encuadre encuadre-dos"> <a href="https://minecraftporrhektran.weebly.com/guia-de-crafteo.html"
                     target="_blank">
