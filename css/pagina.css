@@ -119,6 +119,7 @@
     background-color: black;
 }
 
+/* titulos */
 .encabezado {
     background-image: url(../imagenes/fondo1.jpg);
     font-family: 'Bebas Neue', cursive;
@@ -151,6 +152,7 @@
     }
 }
 
+/*navegador*/
 span {
     color: rgb(38, 116, 22);
 }
@@ -184,6 +186,7 @@ span {
     text-shadow: black 10px 2px 5px;
 }
 
+/* cuadro */
 .encuadre {
     color: chocolate;
     font-style: italic;
@@ -199,6 +202,16 @@ span {
     background-color: chartreuse;
     color: darkred;
     border-width: 10px;
+    text-align: center;
+}
+
+.encuadre-dos h3 {
+    color: rgb(0, 0, 0);
+}
+
+.encuadre-dos:hover {
+    background-color: rgba(253, 245, 230, 0.664);
+    color: rgb(236, 43, 43);
 
 }
 
@@ -322,6 +335,11 @@ form div {
     color: aliceblue;
     padding: 15px;
 }
+
+.lineOver {
+    text-decoration: line-through;
+}
+
 
 .premium {
     display: flex;
