@@ -21,7 +21,7 @@
             </p>
         </header>
         <!--aceesos rapidos -->
-        <nav class="nav">
+        <nav>
             <ul class="nav-list">
                 <li>
                     <a class="button button-primary" href="../index.html">inicio</a>
@@ -36,13 +36,23 @@
                     <a class="button" href="modos.html">Mods</a>
                 </li>
                 <li>
-                    <a class="button" href="portfolio.html">crear cuenta premiunm</a>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            crear cuenta
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="portfolio.html">crear cuenta</a></li>
+                            <li><a class="dropdown-item" href="serverFamosos.html">server famosos </a></li>
+
+                        </ul>
+                    </div>
                 </li>
             </ul>
         </nav>
     </section>
     <main>
-        <section class="encuadre encuadre-tres">
+        <section class="encuadreLista">
 
             <div>
                 <h2>Accesorios</h2>
@@ -61,34 +71,54 @@
                         </div>
                     </li>
                     <li>
-                        <p>aveja de minecraft</p> <img src="../imagenes/aveja.jpg" style="max-height: 150px;" alt="">
-                        <p>2000ARS</p>
-                        <input type="button" value="comprar"> <input type="button" value="anadir al carrito">
+                        <div class="card" style="width: 17rem; ">
+                            <img src="../imagenes/aveja.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">peluche de obeja</h5>
+                                <p class="card-text"></p>
+                                <a href="#" class="btn btn-primary">agregrar al carrito</a><a href="#"
+                                    class="btn btn-danger">comprar por <span class="lineOver">2500 ars</span>2000ars</a>
+                            </div>
+                        </div>
                     </li>
                     <li>
-                        <p>golem de nieve</p> <img src="../imagenes/golemdenieve.jpg" style="max-height:150px ;" alt="">
-                        <p>2500ARS</p>
-                        <input type="button" value="comprar"> <input type="button" value="anadir al carrito">
+                        <div class="card" style="width: 17rem; ">
+                            <img src="../imagenes/golemdenieve.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">peluche de golem de nieve</h5>
+                                <p class="card-text"></p>
+                                <a href="#" class="btn btn-primary">agregrar al carrito</a><a href="#"
+                                    class="btn btn-danger">comprar por <span class="lineOver">2500 ars</span>2000ars</a>
+                            </div>
+                        </div>
                     </li>
                 </ul>
             </div>
         </section>
-        <section class="encuadre encuadre-tres">
-
-
+        <section class="encuadreLista">
             <div>
                 <ul class="ordenanza">
                     <li>
-                        <p>picos</p> <img src="../imagenes/pico4.jpg" style="max-height:150px ;"
-                            alt="pico-de-minecraft">
-                        <p><span>2500ARS</span> 2000ARS </p>
-                        <input type="button" value="comprar"> <input type="button" value="anadir al carrito">
+                        <div class="card" style="width: 17rem; ">
+                            <img src="../imagenes/pico4.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">pico de minecraft</h5>
+                                <p class="card-text"></p>
+                                <a href="#" class="btn btn-primary">agregrar al carrito</a><a href="#"
+                                    class="btn btn-danger">comprar por <span class="lineOver">2500 ars</span>2000ars</a>
+                            </div>
+                        </div>
                     </li>
                     <li>
-                        <p>espada</p> <img src="../imagenes/esoada.jpg" style="max-height:150px ;"
-                            alt="esspada de minecraft">
-                        <p><span>2500ARS</span> 2000ARS </p>
-                        <input type="button" value="comprar"> <input type="button" value="anadir al carrito">
+                        <div class="card" style="width: 17rem; ">
+                            <img src="../imagenes/esoada.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">espada de minecraft</h5>
+                                <p class="card-text"></p>
+                                <a href="#" class="btn btn-primary">agregrar al carrito</a><a href="#"
+                                    class="btn btn-danger">comprar por <span class="lineOver">2500 ars</span>2000ars</a>
+                            </div>
+                        </div>
 
                     </li>
                 </ul>

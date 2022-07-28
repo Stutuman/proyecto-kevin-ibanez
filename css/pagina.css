@@ -215,7 +215,7 @@ span {
 
 }
 
-.encuadre-tres {
+.encuadreLista {
 
     text-align: center;
 }
@@ -236,6 +236,8 @@ span {
     justify-content: space-evenly;
 }
 
+
+
 .ordenanza li {
     border-style: groove;
     border-radius: 10px;
@@ -243,6 +245,10 @@ span {
     padding: 10px;
     list-style-type: none;
 
+}
+
+.ordenanza li:hover {
+    background-color: black;
 }
 
 .seccionHerramientas {
