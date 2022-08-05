@@ -1,0 +1,32 @@
+footer {
+    background-color: rgb(31, 40, 41);
+    border: black;
+    color: rgb(164, 164, 165);
+    text-align: center;
+
+    .pie {
+        display: inline-flex;
+        color: blue;
+        text-align: center;
+        padding: 10px;
+
+        a {
+            text-decoration: none;
+        }
+
+        i {
+            color: rgb(173, 160, 160);
+            font-size: 25px;
+            text-decoration: none;
+        }
+    }
+
+    .derechos {
+        display: flex;
+        justify-content: center;
+
+        p {
+            font-family: cursive;
+        }
+    }
+}

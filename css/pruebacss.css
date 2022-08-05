@@ -1,0 +1,394 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+* {
+  margin: 0;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Bebas Neue', cursive; }
+
+.relleno {
+  border: groove 20px rgba(26, 85, 26, 0.801);
+  background-image: url(../mods-image/fondo-cubos-verdes-3d_237404-207.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: auto;
+  background-attachment: fixed;
+  background-size: cover;
+  /*grid de mods*/ }
+  .relleno .pagination {
+    display: flex;
+    justify-content: center; }
+  .relleno .servidores {
+    text-align: center;
+    font-size: 35px; }
+    .relleno .servidores .premium {
+      display: flex;
+      justify-content: center;
+      gap: 100px;
+      text-decoration: none;
+      padding: 40px; }
+      .relleno .servidores .premium li {
+        list-style-type: none;
+        text-decoration: none;
+        font-size: 30px;
+        border-bottom: 20px solid rgba(176, 221, 176, 0); }
+  .relleno .contenedor-g {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    grid-template-rows: 300px 300px;
+    justify-items: center; }
+    .relleno .contenedor-g div a {
+      font-size: 20px;
+      text-decoration: none; }
+  .relleno div a {
+    font-size: 20px;
+    text-decoration: none; }
+
+#relleno {
+  border: groove 20px rgba(26, 85, 26, 0.801);
+  background-image: url(../mods-image/fondo-cubos-verdes-3d_237404-207.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: auto;
+  background-attachment: fixed;
+  background-size: cover; }
+
+.encabezado {
+  background-image: url(../imagenes/fondo1.jpg);
+  font-family: 'Bebas Neue', cursive;
+  border-style: 100%;
+  padding: 10px 5px 10px 5px; }
+  .encabezado .title {
+    color: rgba(255, 191, 132, 0.836);
+    text-shadow: black 4px 4px 3px;
+    font-style: italic;
+    font-size: 25px;
+    animation-name: fade-in;
+    animation-duration: 1s; }
+    .encabezado .title .title-dos {
+      text-align: center;
+      text-decoration: underline; }
+    .encabezado .title span {
+      color: #267416; }
+
+@keyframes fade-in {
+  0% {
+    transform: translateX(-200px); }
+  100% {
+    transform: translateX(0px); } }
+  .encabezado .nav-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px; }
+    .encabezado .nav-list .nav-list-serv {
+      color: coral; }
+    .encabezado .nav-list li {
+      list-style-type: none; }
+    .encabezado .nav-list .button {
+      color: white;
+      text-decoration: none;
+      font-size: 20px; }
+    .encabezado .nav-list .button:hover {
+      background-color: rgba(122, 190, 12, 0.548);
+      text-decoration: underline;
+      font-size: 30px;
+      transition: 1s;
+      text-shadow: black 10px 2px 5px; }
+
+.encuadre {
+  color: chocolate;
+  font-style: italic;
+  border-style: groove;
+  border-color: chartreuse;
+  border-radius: 5px;
+  border-width: 15px;
+  background-color: rgba(26, 85, 26, 0.801);
+  padding: 20px; }
+  .encuadre .seccionHerramientas {
+    display: flex;
+    justify-content: center;
+    gap: 150px; }
+    .encuadre .seccionHerramientas ul {
+      list-style-type: none;
+      text-align: center;
+      color: #3b3b3b;
+      font-size: 25px; }
+    .encuadre .seccionHerramientas .imageOrder {
+      display: block;
+      gap: 40px; }
+  .encuadre .tituloListado li {
+    text-shadow: white 3px 2px 5px; }
+  .encuadre .encuadre-dos {
+    background-color: chartreuse;
+    color: darkred;
+    border-width: 10px;
+    text-align: center; }
+    .encuadre .encuadre-dos h3 {
+      color: black; }
+    .encuadre .encuadre-dos a {
+      text-decoration: none; }
+    .encuadre .encuadre-dos .encuadre-dos:hover {
+      background-color: rgba(253, 245, 230, 0.664);
+      color: #ec2b2b; }
+
+.encuadreLista {
+  text-align: center; }
+
+.encuadre-dos a {
+  text-decoration: none; }
+
+/*portfolio*/
+.registro {
+  background-color: none;
+  text-align: center;
+  display: flex;
+  background-image: url(../mods-image/fondo-cubos-verdes-3d_237404-207.jpg); }
+
+/*grid mas cositas*/
+.encuadreLista {
+  text-align: center; }
+  .encuadreLista .ordenanza {
+    display: flex;
+    gap: 40px;
+    justify-content: space-evenly; }
+    .encuadreLista .ordenanza li {
+      border-style: groove;
+      border-radius: 10px;
+      border-width: 10px;
+      padding: 10px;
+      list-style-type: none; }
+      .encuadreLista .ordenanza li p span {
+        text-decoration: line-through; }
+    .encuadreLista .ordenanza li:hover {
+      background-color: black; }
+
+form div {
+  padding: 20px; }
+
+/*servfamoso*/
+.gridMods {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "imagen imagen textOne" "TextTwo imageTwo imageTwo" ". . ."; }
+  .gridMods img {
+    width: 100%;
+    height: 300px; }
+  .gridMods .imagen {
+    grid-area: imagen; }
+  .gridMods .imageTwo {
+    grid-area: imageTwo; }
+  .gridMods .textOne {
+    grid-area: textOne;
+    color: white;
+    background-color: black;
+    font-size: 30px;
+    text-align: center; }
+  .gridMods .TextTwo {
+    grid-area: TextTwo;
+    color: white;
+    background-color: black;
+    font-size: 30px;
+    text-align: center; }
+
+/*tabla*/
+table {
+  text-align: center;
+  margin: auto; }
+  table td a {
+    color: firebrick;
+    text-decoration: none; }
+
+/*carosel*/
+.carousel-item div h5 {
+  height: 5px;
+  display: flex;
+  background-color: aliceblue;
+  justify-content: center;
+  font-weight: 200px;
+  font-size: 100px;
+  color: #080404;
+  text-align: center;
+  margin-left: 100px;
+  margin-top: 200px;
+  border: 10px groove black !important; }
+
+.carousel-item div p {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 30px;
+  text-decoration: underline;
+  color: black;
+  margin-top: 300px; }
+
+/*oferta*/
+.oferta {
+  position: absolute;
+  border-radius: 0px 0px 0px 10px;
+  right: 38px;
+  bottom: 394px;
+  background-color: rgba(165, 42, 42, 0.534);
+  color: aliceblue;
+  padding: 15px; }
+
+.lineOver {
+  text-decoration: line-through; }
+
+#servidor-no-premium {
+  text-align: center;
+  font-size: 25px;
+  border-radius: 15px;
+  background-color: rgba(74, 102, 58, 0.616); }
+
+/*Servidor famoso*/
+.wrapper {
+  display: grid;
+  justify-content: center;
+  grid-gap: 50px;
+  grid-template-columns: 500px 700px;
+  grid-template-rows: 150px 150px;
+  background-color: rgba(32, 136, 0, 0.822);
+  color: #444; }
+  .wrapper img {
+    max-width: 200px;
+    max-height: 300px; }
+
+.box {
+  display: flex;
+  justify-content: center;
+  background-color: #444;
+  color: #ff4747;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 150%; }
+  .box .a {
+    grid-column: 1;
+    grid-row: 1; }
+  .box .b {
+    grid-column: 2;
+    grid-row: 2 / 1; }
+  .box .c {
+    grid-column: 2;
+    grid-row: 2; }
+  .box .d {
+    grid-column: 3;
+    grid-row: 2; }
+
+.registro {
+  color: #301e03; }
+
+.progreso {
+  padding: 20px; }
+
+.progress {
+  height: 30px; }
+
+/*media*/
+@media screen and (min-width: 320px) {
+  body {
+    background-color: #05a039; }
+  .nav-list a {
+    font-size: 16px; }
+  .seccionHerramientas {
+    display: block; }
+    .seccionHerramientas .seccionCrafteos iframe {
+      width: 250px; }
+    .seccionHerramientas .imageOrder {
+      display: block; }
+  .servidores {
+    display: block; }
+    .servidores .premium {
+      display: block;
+      margin-right: 30px; }
+      .servidores .premium li a {
+        font-size: 20px; }
+      .servidores .premium h3 {
+        font-size: 25px;
+        text-align: center; }
+    .servidores .encuadre-tres .ordenanza {
+      display: block; }
+  .contenedor-g {
+    display: block; }
+    .contenedor-g img {
+      height: 150px;
+      width: 170px; }
+  .registro {
+    display: block; }
+  .img-steve img {
+    width: 200px; }
+  .wrapper {
+    display: block; } }
+
+@media screen and (min-width: 1024px) {
+  .nav-list a {
+    font-size: 30px; }
+  .seccionHerramientas {
+    display: flex; }
+    .seccionHerramientas .imageOrder {
+      display: flex; }
+  .seccionCrafteos iframe {
+    width: 500px; }
+  .seccionCrafteos img {
+    display: flex; }
+  .seccionCrafteos .servidores h3 {
+    font-size: 25px;
+    text-align: center; }
+  .seccionCrafteos .servidores .premium {
+    display: flex;
+    margin-right: 30px; }
+    .seccionCrafteos .servidores .premium li a {
+      text-decoration: none;
+      color: black;
+      box-shadow: 5px 5px 10px white;
+      font-size: 30px; }
+  .encuadre-tres .ordenanza {
+    display: flex; }
+  .contenedor-g {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    grid-template-rows: 300px 300px;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+    grid-template-areas: "bow ender  " "elytra ender " "villager toomany " "backpacked toomany ";
+    justify-items: center; }
+    .contenedor-g img {
+      height: 200px;
+      width: 400px; }
+  .registro {
+    display: flex;
+    justify-content: center; }
+  .img-steve img {
+    width: 600px; }
+  .wrapper {
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: 370px 260px 370px;
+    grid-template-rows: 250px 250px;
+    background-color: rgba(32, 136, 0, 0.822);
+    color: #444; } }
+
+footer {
+  background-color: #1f2829;
+  border: black;
+  color: #a4a4a5;
+  text-align: center; }
+  footer .pie {
+    display: inline-flex;
+    color: blue;
+    text-align: center;
+    padding: 10px; }
+    footer .pie a {
+      text-decoration: none; }
+    footer .pie i {
+      color: #ada0a0;
+      font-size: 25px;
+      text-decoration: none; }
+  footer .derechos {
+    display: flex;
+    justify-content: center; }
+    footer .derechos p {
+      font-family: cursive; }
