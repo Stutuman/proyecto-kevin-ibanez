@@ -5,8 +5,30 @@
   box-sizing: border-box;
   font-family: 'Bebas Neue', cursive; }
 
+footer {
+  background-color: #1f2829;
+  border: black;
+  color: #a4a4a5;
+  text-align: center; }
+  footer .pie {
+    display: inline-flex;
+    color: blue;
+    text-align: center;
+    padding: 10px; }
+    footer .pie a {
+      text-decoration: none; }
+    footer .pie i {
+      color: #ada0a0;
+      font-size: 25px;
+      text-decoration: none; }
+  footer .derechos {
+    display: flex;
+    justify-content: center; }
+    footer .derechos p {
+      font-family: cursive; }
+
 .relleno {
-  border: groove 20px rgba(26, 85, 26, 0.801);
+  border: groove 20px #1f2829;
   background-image: url(../mods-image/fondo-cubos-verdes-3d_237404-207.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -40,12 +62,10 @@
     .relleno .contenedor-g div a {
       font-size: 20px;
       text-decoration: none; }
-  .relleno div a {
-    font-size: 20px;
-    text-decoration: none; }
 
+/*header*/
 #relleno {
-  border: groove 20px rgba(26, 85, 26, 0.801);
+  border: groove 20px #1f2829;
   background-image: url(../mods-image/fondo-cubos-verdes-3d_237404-207.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -54,11 +74,18 @@
   background-size: cover; }
 
 .encabezado {
-  background-image: url(../imagenes/fondo1.jpg);
+  background-color: #1f2829;
   font-family: 'Bebas Neue', cursive;
   border-style: 100%;
-  padding: 10px 5px 10px 5px; }
+  padding: 10px 5px 10px 5px;
+  display: flex;
+  justify-content: space-around;
+  padding: 20px; }
+  .encabezado .container-fluid img {
+    width: 50px; }
   .encabezado .title {
+    padding-left: 30px;
+    padding-right: 30px;
     color: rgba(255, 191, 132, 0.836);
     text-shadow: black 4px 4px 3px;
     font-style: italic;
@@ -102,7 +129,7 @@
   border-color: chartreuse;
   border-radius: 5px;
   border-width: 15px;
-  background-color: rgba(26, 85, 26, 0.801);
+  background-color: #1f2829;
   padding: 20px; }
   .encuadre .seccionHerramientas {
     display: flex;
@@ -370,25 +397,3 @@ table {
     grid-template-rows: 250px 250px;
     background-color: rgba(32, 136, 0, 0.822);
     color: #444; } }
-
-footer {
-  background-color: #1f2829;
-  border: black;
-  color: #a4a4a5;
-  text-align: center; }
-  footer .pie {
-    display: inline-flex;
-    color: blue;
-    text-align: center;
-    padding: 10px; }
-    footer .pie a {
-      text-decoration: none; }
-    footer .pie i {
-      color: #ada0a0;
-      font-size: 25px;
-      text-decoration: none; }
-  footer .derechos {
-    display: flex;
-    justify-content: center; }
-    footer .derechos p {
-      font-family: cursive; }

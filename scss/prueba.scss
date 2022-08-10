@@ -9,7 +9,9 @@
 
 }
 
-$colorRelleno: rgba(26, 85, 26, 0.801);
+@import "variables";
+@import "footer";
+
 
 .relleno {
     border: groove 20px $colorRelleno;
@@ -45,8 +47,6 @@ $colorRelleno: rgba(26, 85, 26, 0.801);
         }
     }
 
-
-
     /*grid de mods*/
     .contenedor-g {
         list-style-type: none;
@@ -62,13 +62,9 @@ $colorRelleno: rgba(26, 85, 26, 0.801);
 
 
     }
-
-    div a {
-        font-size: 20px;
-        text-decoration: none;
-    }
 }
 
+/*header*/
 
 
 #relleno {
@@ -82,12 +78,23 @@ $colorRelleno: rgba(26, 85, 26, 0.801);
 }
 
 .encabezado {
-    background-image: url(../imagenes/fondo1.jpg);
+    background-color: #1f2829;
     font-family: 'Bebas Neue', cursive;
     border-style: 100%;
     padding: 10px 5px 10px 5px;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+
+    .container-fluid {
+        img {
+            width: 50px;
+        }
+    }
 
     .title {
+        padding-left: 30px;
+        padding-right: 30px;
         color: rgba(255, 191, 132, 0.836);
         text-shadow: black 4px 4px 3px;
         font-style: italic;
@@ -587,5 +594,3 @@ table {
         color: #444;
     }
 }
-
-@import "footer"
