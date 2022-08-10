@@ -27,52 +27,6 @@ footer {
     footer .derechos p {
       font-family: cursive; }
 
-.relleno {
-  border: groove 20px #1f2829;
-  background-image: url(../mods-image/fondo-cubos-verdes-3d_237404-207.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  height: auto;
-  background-attachment: fixed;
-  background-size: cover;
-  /*grid de mods*/ }
-  .relleno .pagination {
-    display: flex;
-    justify-content: center; }
-  .relleno .servidores {
-    text-align: center;
-    font-size: 35px; }
-    .relleno .servidores .premium {
-      display: flex;
-      justify-content: center;
-      gap: 100px;
-      text-decoration: none;
-      padding: 40px; }
-      .relleno .servidores .premium li {
-        list-style-type: none;
-        text-decoration: none;
-        font-size: 30px;
-        border-bottom: 20px solid rgba(176, 221, 176, 0); }
-  .relleno .contenedor-g {
-    list-style-type: none;
-    display: grid;
-    grid-template-columns: repeat(3, 2fr);
-    grid-template-rows: 300px 300px;
-    justify-items: center; }
-    .relleno .contenedor-g div a {
-      font-size: 20px;
-      text-decoration: none; }
-
-/*header*/
-#relleno {
-  border: groove 20px #1f2829;
-  background-image: url(../mods-image/fondo-cubos-verdes-3d_237404-207.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  height: auto;
-  background-attachment: fixed;
-  background-size: cover; }
-
 .encabezado {
   background-color: #1f2829;
   font-family: 'Bebas Neue', cursive;
@@ -121,6 +75,102 @@ footer {
       font-size: 30px;
       transition: 1s;
       text-shadow: black 10px 2px 5px; }
+
+.gridMods {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "imagen imagen textOne" "TextTwo imageTwo imageTwo" ". . ."; }
+  .gridMods img {
+    width: 100%;
+    height: 300px; }
+  .gridMods .imagen {
+    grid-area: imagen; }
+  .gridMods .imageTwo {
+    grid-area: imageTwo; }
+  .gridMods .textOne {
+    grid-area: textOne;
+    color: white;
+    background-color: black;
+    font-size: 30px;
+    text-align: center; }
+  .gridMods .TextTwo {
+    grid-area: TextTwo;
+    color: white;
+    background-color: black;
+    font-size: 30px;
+    text-align: center; }
+
+/*carousel*/
+.carousel-item div h5 {
+  height: 5px;
+  display: flex;
+  background-color: aliceblue;
+  justify-content: center;
+  font-weight: 200px;
+  font-size: 100px;
+  color: #080404;
+  text-align: center;
+  margin-left: 100px;
+  margin-top: 200px;
+  border: 10px groove black !important; }
+
+.carousel-item div p {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 30px;
+  text-decoration: underline;
+  color: black;
+  margin-top: 300px; }
+
+.relleno {
+  border: groove 20px #1f2829;
+  background-image: url(../mods-image/fondo-cubos-verdes-3d_237404-207.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: auto;
+  background-attachment: fixed;
+  background-size: cover;
+  /*grid de mods*/ }
+  .relleno .pagination {
+    display: flex;
+    justify-content: center; }
+  .relleno .servidores {
+    text-align: center;
+    font-size: 35px; }
+    .relleno .servidores .premium {
+      display: flex;
+      justify-content: center;
+      gap: 100px;
+      text-decoration: none;
+      padding: 40px; }
+      .relleno .servidores .premium li {
+        list-style-type: none;
+        text-decoration: none;
+        font-size: 30px;
+        border-bottom: 20px solid rgba(176, 221, 176, 0); }
+  .relleno .contenedor-g {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    grid-template-rows: 300px 300px;
+    justify-items: center; }
+    .relleno .contenedor-g div a {
+      font-size: 20px;
+      text-decoration: none; }
+
+/*header*/
+#relleno {
+  border: groove 20px #1f2829;
+  background-image: url(../mods-image/fondo-cubos-verdes-3d_237404-207.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: auto;
+  background-attachment: fixed;
+  background-size: cover; }
 
 .encuadre {
   color: chocolate;
@@ -192,34 +242,6 @@ footer {
 form div {
   padding: 20px; }
 
-/*servfamoso*/
-.gridMods {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  gap: 0px 0px;
-  grid-auto-flow: row;
-  grid-template-areas: "imagen imagen textOne" "TextTwo imageTwo imageTwo" ". . ."; }
-  .gridMods img {
-    width: 100%;
-    height: 300px; }
-  .gridMods .imagen {
-    grid-area: imagen; }
-  .gridMods .imageTwo {
-    grid-area: imageTwo; }
-  .gridMods .textOne {
-    grid-area: textOne;
-    color: white;
-    background-color: black;
-    font-size: 30px;
-    text-align: center; }
-  .gridMods .TextTwo {
-    grid-area: TextTwo;
-    color: white;
-    background-color: black;
-    font-size: 30px;
-    text-align: center; }
-
 /*tabla*/
 table {
   text-align: center;
@@ -227,29 +249,6 @@ table {
   table td a {
     color: firebrick;
     text-decoration: none; }
-
-/*carosel*/
-.carousel-item div h5 {
-  height: 5px;
-  display: flex;
-  background-color: aliceblue;
-  justify-content: center;
-  font-weight: 200px;
-  font-size: 100px;
-  color: #080404;
-  text-align: center;
-  margin-left: 100px;
-  margin-top: 200px;
-  border: 10px groove black !important; }
-
-.carousel-item div p {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  font-size: 30px;
-  text-decoration: underline;
-  color: black;
-  margin-top: 300px; }
 
 /*oferta*/
 .oferta {
@@ -271,39 +270,6 @@ table {
   background-color: rgba(74, 102, 58, 0.616); }
 
 /*Servidor famoso*/
-.wrapper {
-  display: grid;
-  justify-content: center;
-  grid-gap: 50px;
-  grid-template-columns: 500px 700px;
-  grid-template-rows: 150px 150px;
-  background-color: rgba(32, 136, 0, 0.822);
-  color: #444; }
-  .wrapper img {
-    max-width: 200px;
-    max-height: 300px; }
-
-.box {
-  display: flex;
-  justify-content: center;
-  background-color: #444;
-  color: #ff4747;
-  border-radius: 5px;
-  padding: 10px;
-  font-size: 150%; }
-  .box .a {
-    grid-column: 1;
-    grid-row: 1; }
-  .box .b {
-    grid-column: 2;
-    grid-row: 2 / 1; }
-  .box .c {
-    grid-column: 2;
-    grid-row: 2; }
-  .box .d {
-    grid-column: 3;
-    grid-row: 2; }
-
 .registro {
   color: #301e03; }
 

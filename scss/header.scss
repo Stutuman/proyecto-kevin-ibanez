@@ -1,0 +1,76 @@
+.encabezado {
+    background-color: #1f2829;
+    font-family: 'Bebas Neue', cursive;
+    border-style: 100%;
+    padding: 10px 5px 10px 5px;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+
+    .container-fluid {
+        img {
+            width: 50px;
+        }
+    }
+
+    .title {
+        padding-left: 30px;
+        padding-right: 30px;
+        color: rgba(255, 191, 132, 0.836);
+        text-shadow: black 4px 4px 3px;
+        font-style: italic;
+        font-size: 25px;
+        animation-name: fade-in;
+        animation-duration: 1s;
+
+        .title-dos {
+            text-align: center;
+            text-decoration: underline;
+
+        }
+
+        span {
+            color: rgb(38, 116, 22);
+        }
+    }
+
+    @keyframes fade-in {
+        0% {
+            transform: translateX(-200px);
+        }
+
+        100% {
+            transform: translateX(0px);
+        }
+    }
+
+    .nav-list {
+        .nav-list-serv {
+            color: coral;
+        }
+
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+
+        li {
+            list-style-type: none;
+        }
+
+        .button {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            font-size: 20px;
+
+
+        }
+
+        .button:hover {
+            background-color: rgba(122, 190, 12, 0.548);
+            text-decoration: underline;
+            font-size: 30px;
+            transition: 1s;
+            text-shadow: black 10px 2px 5px;
+        }
+    }
+}

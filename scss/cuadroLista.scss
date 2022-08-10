@@ -1,0 +1,220 @@
+.relleno {
+    border: groove 20px $colorRelleno;
+    background-image: url(../mods-image/fondo-cubos-verdes-3d_237404-207.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: auto;
+    background-attachment: fixed;
+    background-size: cover;
+
+    .pagination {
+        display: flex;
+        justify-content: center;
+    }
+
+    .servidores {
+        text-align: center;
+        font-size: 35px;
+
+        .premium {
+            display: flex;
+            justify-content: center;
+            gap: 100px;
+            text-decoration: none;
+            padding: 40px;
+
+            li {
+                list-style-type: none;
+                text-decoration: none;
+                font-size: 30px;
+                border-bottom: 20px solid rgba(176, 221, 176, 0);
+            }
+        }
+    }
+
+    /*grid de mods*/
+    .contenedor-g {
+        list-style-type: none;
+        display: grid;
+        grid-template-columns: repeat(3, 2fr);
+        grid-template-rows: 300px 300px;
+        justify-items: center;
+
+        div a {
+            font-size: 20px;
+            text-decoration: none;
+        }
+
+
+    }
+}
+
+/*header*/
+
+
+#relleno {
+    border: groove 20px $colorRelleno;
+    background-image: url(../mods-image/fondo-cubos-verdes-3d_237404-207.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: auto;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+.encuadre {
+    color: chocolate;
+    font-style: italic;
+    border-style: groove;
+    border-color: chartreuse;
+    border-radius: 5px;
+    border-width: 15px;
+    background-color: $colorRelleno;
+    padding: 20px;
+
+    .seccionHerramientas {
+        ul {
+            list-style-type: none;
+            text-align: center;
+            color: rgb(59, 59, 59);
+            font-size: 25px;
+        }
+
+        display: flex;
+        justify-content: center;
+        gap: 150px;
+
+        .imageOrder {
+            display: block;
+            gap: 40px;
+        }
+    }
+
+    .tituloListado {
+        li {
+            text-shadow: white 3px 2px 5px;
+        }
+    }
+
+    .encuadre-dos {
+        background-color: chartreuse;
+        color: darkred;
+        border-width: 10px;
+        text-align: center;
+
+        h3 {
+            color: rgb(0, 0, 0);
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .encuadre-dos:hover {
+            background-color: rgba(253, 245, 230, 0.664);
+            color: rgb(236, 43, 43);
+        }
+    }
+}
+
+.encuadreLista {
+
+    text-align: center;
+}
+
+.encuadre-dos a {
+    text-decoration: none;
+
+}
+
+
+
+/*portfolio*/
+
+.registro {
+    background-color: none;
+    text-align: center;
+    display: flex;
+    background-image: url(../mods-image/fondo-cubos-verdes-3d_237404-207.jpg)
+}
+
+/*grid mas cositas*/
+.encuadreLista {
+    text-align: center;
+
+    .ordenanza {
+        display: flex;
+        gap: 40px;
+        justify-content: space-evenly;
+
+        li {
+            border-style: groove;
+            border-radius: 10px;
+            border-width: 10px;
+            padding: 10px;
+            list-style-type: none;
+
+            p span {
+                text-decoration: line-through;
+            }
+        }
+
+        li:hover {
+            background-color: black;
+        }
+    }
+}
+
+form div {
+    padding: 20px;
+}
+
+/*tabla*/
+table {
+    text-align: center;
+    margin: auto;
+
+    td a {
+        color: firebrick;
+        text-decoration: none;
+    }
+}
+
+
+
+/*oferta*/
+.oferta {
+    position: absolute;
+    border-radius: 0px 0px 0px 10px;
+    right: 38px;
+    bottom: 394px;
+    background-color: rgba(165, 42, 42, 0.534);
+    color: aliceblue;
+    padding: 15px;
+
+}
+
+.lineOver {
+    text-decoration: line-through;
+}
+
+#servidor-no-premium {
+    text-align: center;
+    font-size: 25px;
+    border-radius: 15px;
+    background-color: rgba(74, 102, 58, 0.616);
+}
+
+/*Servidor famoso*/
+.registro {
+    color: rgb(48, 30, 3);
+}
+
+.progreso {
+    padding: 20px;
+}
+
+.progress {
+    height: 30px;
+}
