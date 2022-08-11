@@ -5,6 +5,7 @@
   box-sizing: border-box;
   font-family: 'Bebas Neue', cursive; }
 
+/*operaciones*/
 footer {
   background-color: #1f2829;
   border: black;
@@ -140,7 +141,7 @@ footer {
     justify-content: center; }
   .relleno .servidores {
     text-align: center;
-    font-size: 35px; }
+    font-size: 30px; }
     .relleno .servidores .premium {
       display: flex;
       justify-content: center;
