@@ -2,3 +2,14 @@ $colorRelleno: #1f2829;
 /*operaciones*/
 $medida-1: 10px;
 $medida-2: 100px;
+/*maps*/
+$red: (
+    instagram: rgb(158, 117, 40),
+    facebook: rgb(27, 27, 177),
+    whatsapp: rgb(12, 94, 12)
+);
+
+@mixin size($pad, $dap) {
+    padding-left: $pad ;
+    padding-right: $dap;
+}

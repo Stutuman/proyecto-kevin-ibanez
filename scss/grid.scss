@@ -31,11 +31,9 @@
     }
 
     .TextTwo {
+        @extend .textOne;
         grid-area: TextTwo;
-        color: white;
-        background-color: black;
-        font-size: 30px;
-        text-align: center;
+
     }
 }
 

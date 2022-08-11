@@ -6,6 +6,7 @@
   font-family: 'Bebas Neue', cursive; }
 
 /*operaciones*/
+/*maps*/
 footer {
   background-color: #1f2829;
   border: black;
@@ -38,6 +39,13 @@ footer {
   padding: 20px; }
   .encabezado .container-fluid img {
     width: 50px; }
+  .encabezado .container-fluid a:hover {
+    background-color: aliceblue;
+    color: blue;
+    text-decoration: underline;
+    border: groove;
+    border-radius: 5px;
+    transition: 1s; }
   .encabezado .title {
     padding-left: 30px;
     padding-right: 30px;
@@ -91,18 +99,14 @@ footer {
     grid-area: imagen; }
   .gridMods .imageTwo {
     grid-area: imageTwo; }
-  .gridMods .textOne {
+  .gridMods .textOne, .gridMods .TextTwo {
     grid-area: textOne;
     color: white;
     background-color: black;
     font-size: 30px;
     text-align: center; }
   .gridMods .TextTwo {
-    grid-area: TextTwo;
-    color: white;
-    background-color: black;
-    font-size: 30px;
-    text-align: center; }
+    grid-area: TextTwo; }
 
 /*carousel*/
 .carousel-item div h5 {
@@ -127,7 +131,7 @@ footer {
   color: black;
   margin-top: 300px; }
 
-.relleno {
+.relleno, #relleno {
   border: groove 20px #1f2829;
   background-image: url(../imagenes/stone.jpg);
   background-repeat: no-repeat;
@@ -136,44 +140,35 @@ footer {
   background-attachment: fixed;
   background-size: cover;
   /*grid de mods*/ }
-  .relleno .pagination {
+  .relleno .pagination, #relleno .pagination {
     display: flex;
     justify-content: center; }
-  .relleno .servidores {
+  .relleno .servidores, #relleno .servidores {
     text-align: center;
     font-size: 30px; }
-    .relleno .servidores .premium {
+    .relleno .servidores .premium, #relleno .servidores .premium {
       display: flex;
       justify-content: center;
       gap: 100px;
       text-decoration: none;
       padding: 40px; }
-      .relleno .servidores .premium li {
+      .relleno .servidores .premium li, #relleno .servidores .premium li {
         list-style-type: none;
         text-decoration: none;
         font-size: 30px;
         border-bottom: 20px solid rgba(176, 221, 176, 0); }
-  .relleno .contenedor-g {
+  .relleno .contenedor-g, #relleno .contenedor-g {
     list-style-type: none;
     display: grid;
     grid-template-columns: repeat(3, 2fr);
     grid-template-rows: 300px 300px;
     justify-items: center; }
-    .relleno .contenedor-g div a {
+    .relleno .contenedor-g div a, #relleno .contenedor-g div a {
       font-size: 20px;
       text-decoration: none; }
 
 /*header*/
-#relleno {
-  border: groove 20px #1f2829;
-  background-image: url(../imagenes/stone.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  height: auto;
-  background-attachment: fixed;
-  background-size: cover; }
-
-.encuadre {
+.encuadre, .encuadre-dos {
   color: chocolate;
   font-style: italic;
   border-style: groove;
@@ -182,38 +177,37 @@ footer {
   border-width: 15px;
   background-color: #1f2829;
   padding: 20px; }
-  .encuadre .seccionHerramientas {
+  .encuadre .seccionHerramientas, .encuadre-dos .seccionHerramientas {
     display: flex;
     justify-content: center;
     gap: 150px; }
-    .encuadre .seccionHerramientas ul {
+    .encuadre .seccionHerramientas ul, .encuadre-dos .seccionHerramientas ul {
       list-style-type: none;
       text-align: center;
       color: #3b3b3b;
       font-size: 25px; }
-    .encuadre .seccionHerramientas .imageOrder {
+    .encuadre .seccionHerramientas .imageOrder, .encuadre-dos .seccionHerramientas .imageOrder {
       display: block;
       gap: 40px; }
-  .encuadre .tituloListado li {
+  .encuadre .tituloListado li, .encuadre-dos .tituloListado li {
     text-shadow: white 3px 2px 5px; }
-  .encuadre .encuadre-dos {
-    background-color: #1f2829;
-    color: darkred;
-    border-width: 10px;
-    text-align: center; }
-    .encuadre .encuadre-dos h3 {
-      color: black; }
-    .encuadre .encuadre-dos a {
-      text-decoration: none; }
-  .encuadre .encuadre-dos:hover {
-    background-color: rgba(5, 8, 44, 0.664);
-    color: #ec2b2b; }
+
+.encuadre-dos {
+  background-color: #1f2829;
+  color: darkred;
+  border-width: 10px;
+  text-align: center; }
+  .encuadre-dos h3 {
+    color: black; }
+  .encuadre-dos a {
+    text-decoration: none; }
+
+.encuadre-dos:hover {
+  background-color: rgba(5, 8, 44, 0.664);
+  color: #ec2b2b; }
 
 .encuadreLista {
   text-align: center; }
-
-.encuadre-dos a {
-  text-decoration: none; }
 
 /*portfolio*/
 .registro {

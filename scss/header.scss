@@ -11,11 +11,19 @@
         img {
             width: 50px;
         }
+
+        a:hover {
+            background-color: aliceblue;
+            color: blue;
+            text-decoration: underline;
+            border: groove;
+            border-radius: 5px;
+            transition: 1s;
+        }
     }
 
     .title {
-        padding-left: 30px;
-        padding-right: 30px;
+        @include size(30px, 30px);
         color: rgba(255, 191, 132, 0.836);
         text-shadow: black 4px 4px 3px;
         font-style: italic;

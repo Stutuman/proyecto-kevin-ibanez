@@ -53,13 +53,7 @@
 
 
 #relleno {
-    border: groove $medida-1*2 $colorRelleno;
-    background-image: url(../imagenes/stone.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    height: auto;
-    background-attachment: fixed;
-    background-size: cover;
+    @extend .relleno;
 }
 
 
@@ -97,27 +91,30 @@
         }
     }
 
-    .encuadre-dos {
-        background-color: $colorRelleno;
-        color: darkred;
-        border-width: 10px;
-        text-align: center;
 
-        h3 {
-            color: rgb(0, 0, 0);
-        }
+}
 
-        a {
-            text-decoration: none;
-        }
+.encuadre-dos {
+    @extend .encuadre;
+    background-color: $colorRelleno;
+    color: darkred;
+    border-width: 10px;
+    text-align: center;
 
-
+    h3 {
+        color: rgb(0, 0, 0);
     }
 
-    .encuadre-dos:hover {
-        background-color: rgba(5, 8, 44, 0.664);
-        color: rgb(236, 43, 43);
+    a {
+        text-decoration: none;
     }
+
+
+}
+
+.encuadre-dos:hover {
+    background-color: rgba(5, 8, 44, 0.664);
+    color: rgb(236, 43, 43);
 }
 
 .encuadreLista {
@@ -125,10 +122,6 @@
     text-align: center;
 }
 
-.encuadre-dos a {
-    text-decoration: none;
-
-}
 
 /*portfolio*/
 

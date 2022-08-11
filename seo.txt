@@ -1,0 +1,24 @@
+- index html-
+. se agrego mixin a todos los headers de todos los html
+. se agrego extend
+. se agrego favicon
+. se agrego keywords "minecraft, Crafteo basicos, Servidores minecraft,Servidores no premium"
+. se agrego description "Guia basica para aprender a jugar minecraft"
+-portfolio-
+. se agrego favicon
+.se agrego keywords "Creacion de cuenta para usuarios nuevos"
+. se agrego description "Crear cuenta premium, Minecraft Premium"
+. se modifico background image
+-serverFamosos html-
+. se agrego favicon
+.se agrego keywords "servidores minecraft, Karmaland, TortillaLand, Ibai"
+. se agrego description "Servidores reconocidos por la comunidad del juego"
+. se agrego extend
+-Servidores html-
+. se agrego favicon
+.se agrego keywords "servidores Minecraft, Minecraft no Premium"
+. se agrego description "servidores premium y no premium para nuevos jugadores"
+-Merchandansing html-
+. se agrego favicon
+.se agrego keywords "Tienda minecraft, Peluches minecraft"
+. se agrego description "Vendedor de merchandasing de minecraft"
