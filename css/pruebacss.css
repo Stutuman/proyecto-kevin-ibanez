@@ -128,7 +128,7 @@ footer {
 
 .relleno {
   border: groove 20px #1f2829;
-  background-image: url(../mods-image/fondo-cubos-verdes-3d_237404-207.jpg);
+  background-image: url(../imagenes/stone.jpg);
   background-repeat: no-repeat;
   background-position: center;
   height: auto;
@@ -165,7 +165,7 @@ footer {
 /*header*/
 #relleno {
   border: groove 20px #1f2829;
-  background-image: url(../mods-image/fondo-cubos-verdes-3d_237404-207.jpg);
+  background-image: url(../imagenes/stone.jpg);
   background-repeat: no-repeat;
   background-position: center;
   height: auto;
@@ -176,7 +176,7 @@ footer {
   color: chocolate;
   font-style: italic;
   border-style: groove;
-  border-color: chartreuse;
+  border-color: black;
   border-radius: 5px;
   border-width: 15px;
   background-color: #1f2829;
@@ -196,7 +196,7 @@ footer {
   .encuadre .tituloListado li {
     text-shadow: white 3px 2px 5px; }
   .encuadre .encuadre-dos {
-    background-color: chartreuse;
+    background-color: #1f2829;
     color: darkred;
     border-width: 10px;
     text-align: center; }
@@ -204,9 +204,9 @@ footer {
       color: black; }
     .encuadre .encuadre-dos a {
       text-decoration: none; }
-    .encuadre .encuadre-dos .encuadre-dos:hover {
-      background-color: rgba(253, 245, 230, 0.664);
-      color: #ec2b2b; }
+  .encuadre .encuadre-dos:hover {
+    background-color: rgba(5, 8, 44, 0.664);
+    color: #ec2b2b; }
 
 .encuadreLista {
   text-align: center; }
@@ -219,7 +219,12 @@ footer {
   background-color: none;
   text-align: center;
   display: flex;
-  background-image: url(../mods-image/fondo-cubos-verdes-3d_237404-207.jpg); }
+  background-image: url(../imagenes/imagenFondo.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: auto;
+  background-attachment: fixed;
+  background-size: cover; }
 
 /*grid mas cositas*/
 .encuadreLista {
