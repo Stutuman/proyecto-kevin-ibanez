@@ -8,9 +8,21 @@
     padding: 20px;
 
     .container-fluid {
+
         img {
             width: 50px;
         }
+
+        a {
+            color: white;
+        }
+
+        .nav-item {
+            a {
+                color: antiquewhite;
+            }
+        }
+
 
         a:hover {
             background-color: aliceblue;

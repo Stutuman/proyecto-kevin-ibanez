@@ -1,6 +1,6 @@
 .relleno {
     border: groove 20px $colorRelleno;
-    background-image: url(../imagenes/stone.jpg);
+    background-image: url(../imageFondo/librerias.jpg);
     background-repeat: no-repeat;
     background-position: center;
     height: auto;
@@ -135,6 +135,13 @@
     height: auto;
     background-attachment: fixed;
     background-size: cover;
+
+    .caja {
+        border-color: $colorRelleno;
+        border-radius: 10px;
+        color: black;
+        background-color: aliceblue;
+    }
 }
 
 /*grid mas cositas*/

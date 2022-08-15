@@ -39,6 +39,10 @@ footer {
   padding: 20px; }
   .encabezado .container-fluid img {
     width: 50px; }
+  .encabezado .container-fluid a {
+    color: white; }
+  .encabezado .container-fluid .nav-item a {
+    color: antiquewhite; }
   .encabezado .container-fluid a:hover {
     background-color: aliceblue;
     color: blue;
@@ -133,7 +137,7 @@ footer {
 
 .relleno, #relleno {
   border: groove 20px #1f2829;
-  background-image: url(../imagenes/stone.jpg);
+  background-image: url(../imageFondo/librerias.jpg);
   background-repeat: no-repeat;
   background-position: center;
   height: auto;
@@ -220,6 +224,11 @@ footer {
   height: auto;
   background-attachment: fixed;
   background-size: cover; }
+  .registro .caja {
+    border-color: #1f2829;
+    border-radius: 10px;
+    color: black;
+    background-color: aliceblue; }
 
 /*grid mas cositas*/
 .encuadreLista {
