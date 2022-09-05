@@ -1,5 +1,5 @@
 /*media*/
-@media screen and (min-width:320px) {
+@media screen and (max-width:1023px) {
 
     body {
         background-color: rgb(5, 160, 57);
@@ -21,30 +21,29 @@
         }
     }
 
-    .servidores {
-        display: block;
-
-        .premium {
-            display: block;
-            margin-right: 30px;
-
-            li a {
-                font-size: 20px;
+    
+    
+.relleno{
+    .servidores{
+        .premium{
+            display: table-footer-group;
+            max-width: 300px;
+            ul{
+                li{
+                    
+                }
             }
-
-            h3 {
-                font-size: 25px;
-                text-align: center;
-            }
-        }
-
-
-
-        .encuadre-tres .ordenanza {
-            display: block;
         }
     }
-
+    .encuadreLista{
+        .ordenanza{
+            display: inline-block;
+            li{
+               padding: 0%; 
+            }
+        }
+    }
+}
 
 
     .contenedor-g {
@@ -67,6 +66,57 @@
     .wrapper {
         display: block;
     }
+
+
+        .gridMods {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            gap: 0px 0px;
+            grid-auto-flow: row;
+            grid-template-areas:
+                "Karmaland"
+                "textoKarmaland"
+                "usuarioKarmaland"
+                "karmalandCreador"
+                "tortillaland"
+                "textoTortilla"
+                "usuarioTortilla"
+                "tortilla-creador";
+        }
+    
+        .Karmaland {
+            grid-area: karmaland;
+            
+        }
+    
+        .textoKarmaland {
+            grid-area: textoKarmaland;
+        }
+    
+        .usuarioKarmaland {
+            grid-area: usuarioKarmaland;
+        }
+    
+        .karmalandCreador {
+            grid-area: karmalandCreador;
+        }
+    
+        .tortillaland {
+            grid-area: tortillaland;
+        }
+    
+        .textoTortilla {
+            grid-area: textoTortilla;
+        }
+    
+        .usuarioTortilla {
+            grid-area: usuarioTortilla;
+        }
+    
+        .tortilla-creador {
+            grid-area: tortilla-creador;
+        }
 }
 
 @media screen and (min-width:1024px) {

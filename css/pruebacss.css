@@ -43,6 +43,8 @@ footer {
     color: white; }
   .encabezado .container-fluid .nav-item a {
     color: antiquewhite; }
+  .encabezado .container-fluid .nav-item .dropdown-menu {
+    background-color: black !important; }
   .encabezado .container-fluid a:hover {
     background-color: aliceblue;
     color: blue;
@@ -91,27 +93,100 @@ footer {
 
 .gridMods {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
   gap: 0px 0px;
   grid-auto-flow: row;
-  grid-template-areas: "imagen imagen textOne" "TextTwo imageTwo imageTwo" ". . ."; }
+  grid-template-areas: "Karmaland Karmaland textoKarmaland textoKarmaland" "Karmaland Karmaland usuarioKarmaland karmalandCreador" "tortilla-creador usuarioTortilla tortillaland tortillaland" "textoTortilla textoTortilla tortillaland tortillaland"; }
   .gridMods img {
     width: 100%;
-    height: 300px; }
-  .gridMods .imagen {
-    grid-area: imagen; }
-  .gridMods .imageTwo {
-    grid-area: imageTwo; }
-  .gridMods .textOne, .gridMods .TextTwo {
-    grid-area: textOne;
-    color: white;
-    background-color: black;
-    font-size: 30px;
+    height: 100%; }
+  .gridMods .titulo {
+    text-align: center;
+    color: #3b2b1f;
+    font-size: 50px; }
+  .gridMods .Karmaland {
+    grid-area: Karmaland; }
+  .gridMods .textoKarmaland {
+    grid-area: textoKarmaland;
+    background-color: grey;
+    color: white; }
+    .gridMods .textoKarmaland .text {
+      font-size: 30px; }
+  .gridMods .usuarioKarmaland {
+    grid-area: usuarioKarmaland;
+    background-color: grey;
+    color: white; }
+  .gridMods .karmalandCreador {
+    grid-area: karmalandCreador;
+    background-color: grey; }
+  .gridMods .tortillaland {
+    grid-area: tortillaland; }
+  .gridMods .textoTortilla {
+    grid-area: textoTortilla;
+    background-color: grey;
+    color: white; }
+    .gridMods .textoTortilla .textTor {
+      font-size: 30px; }
+  .gridMods .tortilla-creador {
+    grid-area: tortilla-creador;
+    background-color: grey;
     text-align: center; }
-  .gridMods .TextTwo {
-    grid-area: TextTwo; }
+    .gridMods .tortilla-creador img {
+      filter: drop-shadow(0 0 0.75rem crimson);
+      margin-top: 40px;
+      height: 350px;
+      width: 200px; }
+  .gridMods .usuarioTortilla {
+    grid-area: usuarioTortilla;
+    background-color: grey;
+    color: white; }
+  .gridMods .creador {
+    display: flex;
+    text-align: center; }
+    .gridMods .creador img {
+      filter: drop-shadow(0 0 0.75rem crimson);
+      width: 200px;
+      height: 300px; }
 
+/*.gridMods {
+    display: grid;
+    grid-template-columns: 1.4fr 0.2fr 1.4fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "imagen imagen textOne"
+        "TextTwo imageTwo imageTwo"
+        ". . .";
+
+    img {
+        width: 100%;
+        height: 300px;
+    }
+
+    .imagen {
+        grid-area: imagen;
+    }
+
+    .imageTwo {
+        grid-area: imageTwo;
+    }
+
+    .textOne {
+        grid-area: textOne;
+        color: white;
+        background-color: black;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .TextTwo {
+        @extend .textOne;
+        grid-area: TextTwo;
+
+    }
+}*/
 /*carousel*/
 .carousel-item div h5 {
   height: 5px;
@@ -137,7 +212,7 @@ footer {
 
 .relleno, #relleno {
   border: groove 20px #1f2829;
-  background-image: url(../imageFondo/librerias.jpg);
+  background-image: url(../imageFondo/170eda7473a17cd8c09e40d36a917f3c.jpg);
   background-repeat: no-repeat;
   background-position: center;
   height: auto;
@@ -155,7 +230,7 @@ footer {
       justify-content: center;
       gap: 100px;
       text-decoration: none;
-      padding: 40px; }
+      padding: 40px 400px 10px 400px; }
       .relleno .servidores .premium li, #relleno .servidores .premium li {
         list-style-type: none;
         text-decoration: none;
@@ -289,7 +364,7 @@ table {
   height: 30px; }
 
 /*media*/
-@media screen and (min-width: 320px) {
+@media screen and (max-width: 1023px) {
   body {
     background-color: #05a039; }
   .nav-list a {
@@ -300,18 +375,13 @@ table {
       width: 250px; }
     .seccionHerramientas .imageOrder {
       display: block; }
-  .servidores {
-    display: block; }
-    .servidores .premium {
-      display: block;
-      margin-right: 30px; }
-      .servidores .premium li a {
-        font-size: 20px; }
-      .servidores .premium h3 {
-        font-size: 25px;
-        text-align: center; }
-    .servidores .encuadre-tres .ordenanza {
-      display: block; }
+  .relleno .servidores .premium, #relleno .servidores .premium {
+    display: table-footer-group;
+    max-width: 300px; }
+  .relleno .encuadreLista .ordenanza, #relleno .encuadreLista .ordenanza {
+    display: inline-block; }
+    .relleno .encuadreLista .ordenanza li, #relleno .encuadreLista .ordenanza li {
+      padding: 0%; }
   .contenedor-g {
     display: block; }
     .contenedor-g img {
@@ -322,7 +392,30 @@ table {
   .img-steve img {
     width: 200px; }
   .wrapper {
-    display: block; } }
+    display: block; }
+  .gridMods {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "Karmaland" "textoKarmaland" "usuarioKarmaland" "karmalandCreador" "tortillaland" "textoTortilla" "usuarioTortilla" "tortilla-creador"; }
+  .Karmaland {
+    grid-area: karmaland; }
+  .textoKarmaland {
+    grid-area: textoKarmaland; }
+  .usuarioKarmaland {
+    grid-area: usuarioKarmaland; }
+  .karmalandCreador {
+    grid-area: karmalandCreador; }
+  .tortillaland {
+    grid-area: tortillaland; }
+  .textoTortilla {
+    grid-area: textoTortilla; }
+  .usuarioTortilla {
+    grid-area: usuarioTortilla; }
+  .tortilla-creador {
+    grid-area: tortilla-creador; } }
 
 @media screen and (min-width: 1024px) {
   .nav-list a {

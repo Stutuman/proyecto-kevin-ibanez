@@ -1,6 +1,94 @@
 .gridMods {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "Karmaland Karmaland textoKarmaland textoKarmaland"
+        "Karmaland Karmaland usuarioKarmaland karmalandCreador"
+        "tortilla-creador usuarioTortilla tortillaland tortillaland"
+        "textoTortilla textoTortilla tortillaland tortillaland";
+        img {
+                width: 100%;
+                height: 100%;
+            }
+                        .titulo {
+                            text-align: center;
+                            color: rgb(59, 43, 31);
+                            font-size: 50px;
+                        }
+
+
+.Karmaland {
+    grid-area: Karmaland;
+}
+
+.textoKarmaland {
+    grid-area: textoKarmaland;
+    background-color:grey ;
+    color: white; 
+    .text{ font-size: 30px;
+
+    }
+}
+
+.usuarioKarmaland {
+    grid-area: usuarioKarmaland;
+    background-color: grey;
+        color: white;
+        
+}
+
+.karmalandCreador {
+    grid-area: karmalandCreador;
+    background-color: grey;
+}
+
+.tortillaland {
+    grid-area: tortillaland;
+}
+
+.textoTortilla {
+    grid-area: textoTortilla;
+    background-color: grey;
+    color: white;
+    .textTor{
+        font-size: 30px;
+    }
+}
+
+.tortilla-creador {
+    grid-area: tortilla-creador;
+    background-color: grey;
+    text-align: center;
+    img{
+        filter: drop-shadow(0 0 0.75rem crimson);
+        margin-top: 40px;
+        height: 350px;
+        width: 200px;
+    }
+}
+
+.usuarioTortilla {
+    grid-area: usuarioTortilla;
+    background-color: grey;
+    color: white;
+}
+.creador{display: flex;
+   text-align: center;
+    img{
+        filter: drop-shadow(0 0 0.75rem crimson);
+    width: 200px;
+    height: 300px;
+    }
+   
+    
+}
+}
+/*.gridMods {
+    display: grid;
+    grid-template-columns: 1.4fr 0.2fr 1.4fr;
     grid-template-rows: 1fr 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
@@ -35,7 +123,7 @@
         grid-area: TextTwo;
 
     }
-}
+}*/
 
 /*carousel*/
 .carousel-item {

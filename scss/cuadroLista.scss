@@ -1,6 +1,6 @@
 .relleno {
     border: groove 20px $colorRelleno;
-    background-image: url(../imageFondo/librerias.jpg);
+    background-image: url(../imageFondo/170eda7473a17cd8c09e40d36a917f3c.jpg);
     background-repeat: no-repeat;
     background-position: center;
     height: auto;
@@ -13,17 +13,20 @@
     }
 
     .servidores {
+
         text-align: center;
         font-size: $medida-1*3;
 
         .premium {
+
             display: flex;
             justify-content: center;
             gap: $medida-2;
             text-decoration: none;
-            padding: $medida-1*4;
+            padding: $medida-1*4 $medida-2*4 $medida-1 $medida-2*4;
 
             li {
+
                 list-style-type: none;
                 text-decoration: none;
                 font-size: $medida-1*3;
