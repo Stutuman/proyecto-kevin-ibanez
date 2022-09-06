@@ -5,8 +5,7 @@
   box-sizing: border-box;
   font-family: 'Bebas Neue', cursive; }
 
-/*operaciones*/
-/*maps*/
+
 footer {
   background-color: #1f2829;
   border: black;
@@ -97,7 +96,10 @@ footer {
   grid-template-rows: 1fr 1fr 1fr 1fr;
   gap: 0px 0px;
   grid-auto-flow: row;
-  grid-template-areas: "Karmaland Karmaland textoKarmaland textoKarmaland" "Karmaland Karmaland usuarioKarmaland karmalandCreador" "tortilla-creador usuarioTortilla tortillaland tortillaland" "textoTortilla textoTortilla tortillaland tortillaland"; }
+  grid-template-areas: "Karmaland Karmaland textoKarmaland textoKarmaland"
+ "Karmaland Karmaland usuarioKarmaland karmalandCreador"
+ "tortilla-creador usuarioTortilla tortillaland tortillaland"
+ "textoTortilla textoTortilla tortillaland tortillaland"; }
   .gridMods img {
     width: 100%;
     height: 100%; }
@@ -149,44 +151,7 @@ footer {
       width: 200px;
       height: 300px; }
 
-/*.gridMods {
-    display: grid;
-    grid-template-columns: 1.4fr 0.2fr 1.4fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-        "imagen imagen textOne"
-        "TextTwo imageTwo imageTwo"
-        ". . .";
 
-    img {
-        width: 100%;
-        height: 300px;
-    }
-
-    .imagen {
-        grid-area: imagen;
-    }
-
-    .imageTwo {
-        grid-area: imageTwo;
-    }
-
-    .textOne {
-        grid-area: textOne;
-        color: white;
-        background-color: black;
-        font-size: 30px;
-        text-align: center;
-    }
-
-    .TextTwo {
-        @extend .textOne;
-        grid-area: TextTwo;
-
-    }
-}*/
 /*carousel*/
 .carousel-item div h5 {
   height: 5px;
@@ -399,7 +364,14 @@ table {
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
-    grid-template-areas: "Karmaland" "textoKarmaland" "usuarioKarmaland" "karmalandCreador" "tortillaland" "textoTortilla" "usuarioTortilla" "tortilla-creador"; }
+    grid-template-areas: "Karmaland"
+ "textoKarmaland"
+ "usuarioKarmaland"
+ "karmalandCreador"
+ "tortillaland"
+ "textoTortilla"
+ "usuarioTortilla"
+ "tortilla-creador"; }
   .Karmaland {
     grid-area: karmaland; }
   .textoKarmaland {
@@ -448,7 +420,10 @@ table {
     grid-template-rows: 300px 300px;
     grid-row-gap: 10px;
     grid-column-gap: 10px;
-    grid-template-areas: "bow ender  " "elytra ender " "villager toomany " "backpacked toomany ";
+    grid-template-areas: "bow ender  "
+ "elytra ender "
+ "villager toomany "
+ "backpacked toomany ";
     justify-items: center; }
     .contenedor-g img {
       height: 200px;
